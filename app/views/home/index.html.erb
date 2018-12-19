@@ -1,7 +1,7 @@
 <%= form_tag root_path, :method => 'POST' do %>
     <div class="form-group">
-        <%= text_field_tag 'id', nil, placeholder: 'Enter Company Ticker Symbol', size: 50, class: "form-control" %>
-        <%= submit_tag 'Look Up Stock Quote', class: "btn btn-default" %>
+        <%= text_field_tag 'id', nil, placeholder: 'Enter Company Ticker Symbol', size: 50 %>
+        <%= submit_tag 'Look Up Stock Quote' %>
     </div>
 <% end %>
 
