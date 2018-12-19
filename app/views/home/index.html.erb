@@ -6,7 +6,13 @@
 <% end %>
 
 <% if @stock %>
-    <%= @stock.company_name %>
+    <strong>Company Name: </strong><%= @stock.company_name %> - <%= @stock.symbol %><br>
+    <strong>Sector: </strong><%= @stock.sector %><br>
+    <strong>Stock Price: </strong><%= @stock.latest_price %><br>
+    <strong>Market Cap: </strong><%= @stock.market_cap %><br>
+    <strong>P/E ratio: </strong><%= @stock.pe_ratio %><br>
+    <strong>Year High: </strong><%= @stock.week52_high %><br>
+    <strong>Year Low: </strong><%= @stock.week52_low %><br>
 <% else %>
     <%= @nothing %>
 <% end %>
